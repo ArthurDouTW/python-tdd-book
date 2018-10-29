@@ -25,7 +25,7 @@ SECRET_KEY = 'fw&@ijgy=((%j2@#4hl4)*29%mf&bbj)r&$et1h9yr=c-6(4=a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
