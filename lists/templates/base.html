@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -20,6 +20,11 @@
                                    class="form-control input-lg"
                                    placeholder="Enter a to-do item"/>
                             {% csrf_token %}
+                            {% if error %}
+                                <div class="form-group has-error">
+                                    <span class="help-block">{{ error }}</span>
+                                </div>
+                            {% endif %}
                         </form>
                     </div>
                 </div>
