@@ -3,6 +3,7 @@ from django.urls import resolve
 from django.utils.html import escape
 from django.http import HttpRequest
 
+from lists.forms import ItemForm
 from lists.models import Item, List
 
 
@@ -11,6 +12,10 @@ class HomePageTest(TestCase):
     def test_home_page_returns_correct_html(self):
         response = self.client.get('/')
         self.assertTemplateUsed(response, 'home.html')
+
+    def test_home_page_uses_item_form(self):
+        response = self.client.get('/')
+        self.assertIsInstance(response.context['form'], ItemForm)
 
 
 class ListViewTest(TestCase):
