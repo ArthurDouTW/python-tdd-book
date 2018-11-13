@@ -4,6 +4,5 @@ virtualenv
 .vs
 __pycache__
 *.pyc
-static 
 ADAWS_KeyPair.pem
 .env
