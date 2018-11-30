@@ -7,7 +7,7 @@ from time import sleep
 from .base import FunctionalTest
 
 TEST_EMAIL = 'jackdoy2@hotmail.com'
-SUBJECT = 'Your login link for adsupperlist'
+SUBJECT = 'Your login link for Adsupperlist'
 
 
 class LoginTest(FunctionalTest):
